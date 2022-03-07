@@ -6,7 +6,20 @@ import Login from './pages/login/Login';
 import Signup from './pages/signup/Signup';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
