@@ -11,3 +11,7 @@
   max-width: 960px;
   align-items: center;
 }
+.title {
+  margin-right: auto;
+  font-weight: bold;
+}
