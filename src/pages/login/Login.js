@@ -12,7 +12,9 @@ export default function Login() {
   </label>
   <label>
     <span>password</span>
-    <input type="password" />
+    <input 
+    type="password" 
+    />
   </label>
   </form>);
 }
