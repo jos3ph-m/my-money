@@ -11,3 +11,6 @@
   display: block;
   margin-bottom: 6px;
 }
+.login-form input {
+  padding: 8px 6px;
+}
