@@ -12,13 +12,16 @@ export default function Login() {
     <span>email:</span>
     <input 
     type="email"
-    onChange={(e) => setEmail(e.target.value)} 
+    onChange={(e) => setEmail(e.target.value)}
+    value={email} 
     />
   </label>
   <label>
     <span>password</span>
     <input 
-    type="password" 
+    type="password"
+    onChange={(e) => setPassword(e.target.value)}
+    value={password} 
     />
   </label>
   <button className="btn">Login</button>
