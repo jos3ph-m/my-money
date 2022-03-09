@@ -16,5 +16,6 @@ export default function Login() {
     type="password" 
     />
   </label>
+  <button className="btn">Login</button>
   </form>);
 }
