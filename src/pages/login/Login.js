@@ -1,5 +1,5 @@
 import styles from './Login.module.css';
 
 export default function Login() {
-  return <div>Login</div>;
+  return <form className={styles.['login-form']}>Login</form>;
 }
