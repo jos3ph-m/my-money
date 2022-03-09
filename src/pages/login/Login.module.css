@@ -7,3 +7,7 @@
   display: block;
   margin: 30px auto;
 }
+.login-form span {
+  display: block;
+  margin-bottom: 6px;
+}
