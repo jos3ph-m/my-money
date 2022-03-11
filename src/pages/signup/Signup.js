@@ -25,7 +25,7 @@ export default function Signup() {
         />
       </label>
       <label>
-        <span>password</span>
+        <span>password:</span>
         <input
           type="password"
           onChange={(e) => setPassword(e.target.value)}
@@ -33,7 +33,7 @@ export default function Signup() {
         />
       </label>
       <label>
-        
+        <span>display name:</span>
       </label>
       <button className="btn">Signup</button>
     </form>
