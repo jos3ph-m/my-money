@@ -1,8 +1,8 @@
+import React from 'react';
 import { useState } from 'react/cjs/react.production.min';
 
 // styles
 import styles from './Signup.module.css';
-
 
 export default function Signup() {
   const [email, setEmail] = useState('');
@@ -13,10 +13,9 @@ export default function Signup() {
     e.preventDefault();
     console.log(email, password, displayName);
   };
-  
 
   return (
-    <form onSubmit={handleSubmit} className={styles.['signup-form']}>
+    <form onSubmit={handleSubmit} className={styles['signup-form']}>
       <h2>Signup</h2>
       <label>
         <span>email:</span>
@@ -36,11 +35,13 @@ export default function Signup() {
       </label>
       <label>
         <span>display name:</span>
-        <input type="text"
-        onChange={(e) => setDisplayName(e.target.value)}
-        value={displayName} />
+        <input
+          type="text"
+          onChange={(e) => setDisplayName(e.target.value)}
+          value={displayName}
+        />
       </label>
       <button className="btn">Signup</button>
     </form>
-  )
+  );
 }
