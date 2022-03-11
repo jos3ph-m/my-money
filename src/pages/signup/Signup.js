@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react/cjs/react.production.min';
+import { useState } from 'react';
 
 // styles
 import styles from './Signup.module.css';
