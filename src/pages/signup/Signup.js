@@ -3,15 +3,17 @@ import { useState } from 'react/cjs/react.production.min';
 // styles
 import styles from './Signup.module.css';
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log(email, password);
-};
 
 export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [displayName, setDisplayName] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+  };
+  
 
   return (
     <form onSubmit={handleSubmit} className={styles.['signup-form']}>
