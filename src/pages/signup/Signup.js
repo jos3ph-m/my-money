@@ -12,7 +12,7 @@ export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [displayName, setDisplayName] = useState('');
-  
+
   return (
     <form onSubmit={handleSubmit} className={styles.['signup-form']}>
       <h2>Signup</h2>
@@ -31,6 +31,9 @@ export default function Signup() {
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
+      </label>
+      <label>
+        
       </label>
       <button className="btn">Signup</button>
     </form>
