@@ -5,7 +5,7 @@ import styles from './Signup.module.css';
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  console.log(email, password);
+  // console.log(email, password);
 };
 
 export default function Signup() {
