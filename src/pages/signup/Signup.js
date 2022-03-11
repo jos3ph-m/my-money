@@ -30,6 +30,7 @@ export default function Signup() {
           value={password}
         />
       </label>
+      <button className="btn">Signup</button>
     </form>
   )
 }
