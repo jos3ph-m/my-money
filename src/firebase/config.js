@@ -9,3 +9,5 @@ const firebaseConfig = {
   messagingSenderId: '866306161880',
   appId: process.env.FIREBASE_APP_ID,
 };
+
+// init firebase
