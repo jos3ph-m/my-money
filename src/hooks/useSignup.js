@@ -7,5 +7,5 @@ export const useSignup = () => {
 
   const signup = async (email, password, displayName) => {};
 
-  return { error };
+  return { error, isPending };
 };
