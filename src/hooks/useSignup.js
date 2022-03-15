@@ -11,6 +11,7 @@ export const useSignup = () => {
     setIsPending(true);
 
     try {
+      // signup user
     } catch (err) {}
   };
 
