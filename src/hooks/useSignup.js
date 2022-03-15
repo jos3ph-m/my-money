@@ -12,7 +12,7 @@ export const useSignup = () => {
 
     try {
       // signup user
-      await projectAuth.createUserWithEmailAndPassword();
+      await projectAuth.createUserWithEmailAndPassword(email, password);
     } catch (err) {
       console.log(err.message);
       setError(err.message);
