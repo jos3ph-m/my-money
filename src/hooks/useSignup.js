@@ -12,7 +12,9 @@ export const useSignup = () => {
 
     try {
       // signup user
-    } catch (err) {}
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   return { error, isPending, signup };
