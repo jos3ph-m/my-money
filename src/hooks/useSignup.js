@@ -12,6 +12,7 @@ export const useSignup = () => {
 
     try {
       // signup user
+      await projectAuth.createUserWithEmailAndPassword();
     } catch (err) {
       console.log(err.message);
       setError(err.message);
