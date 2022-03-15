@@ -6,6 +6,7 @@ export const useSignup = () => {
   const [isPending, setIsPending] = useState(false);
 
   const signup = async (email, password, displayName) => {
+    // reset error everytime signup is called
     setError(null);
   };
 
