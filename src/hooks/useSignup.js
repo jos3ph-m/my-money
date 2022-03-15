@@ -14,6 +14,7 @@ export const useSignup = () => {
       // signup user
     } catch (err) {
       console.log(err.message);
+      setError(err.message);
     }
   };
 
