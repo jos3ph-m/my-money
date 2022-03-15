@@ -8,6 +8,10 @@ export const useSignup = () => {
   const signup = async (email, password, displayName) => {
     // reset error everytime signup is called
     setError(null);
+    setIsPending(true);
+
+    try {
+    } catch (err) {}
   };
 
   return { error, isPending, signup };
