@@ -17,6 +17,10 @@ export const useSignup = () => {
         password
       );
       console.log(res.user);
+
+      if (!res) {
+        throw new Error('Could not complete signup');
+      }
     } catch (err) {
       console.log(err.message);
       setError(err.message);
