@@ -34,5 +34,5 @@ export const useSignup = () => {
     }
   };
 
-  return { error, isPending, signup };
+  return { signup, error, isPending };
 };
