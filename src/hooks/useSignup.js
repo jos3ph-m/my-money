@@ -24,6 +24,8 @@ export const useSignup = () => {
 
       // add display name to user
       await res.user.updateProfile({ displayName });
+
+      setIsPending(false);
     } catch (err) {
       console.log(err.message);
       setError(err.message);
