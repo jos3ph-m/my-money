@@ -43,6 +43,7 @@ export default function Signup() {
         />
       </label>
       <button className="btn">Signup</button>
+      {}
       {error && <p>{error}</p>}
     </form>
   );
