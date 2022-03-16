@@ -21,6 +21,8 @@ export const useSignup = () => {
       if (!res) {
         throw new Error('Could not complete signup');
       }
+
+      // add display name to user
     } catch (err) {
       console.log(err.message);
       setError(err.message);
