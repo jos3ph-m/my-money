@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-require('dotenv').config({ path: '../../.env' });
+console.log(process.env);
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
