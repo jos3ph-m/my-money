@@ -3,7 +3,6 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: 'mymoney-1d0a8.firebaseapp.com',
   projectId: 'mymoney-1d0a8',
   storageBucket: 'mymoney-1d0a8.appspot.com',
