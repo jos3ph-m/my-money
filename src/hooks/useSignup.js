@@ -25,6 +25,8 @@ export const useSignup = () => {
       // add display name to user
       await res.user.updateProfile({ displayName });
 
+      // dispatch login action
+
       setIsPending(false);
       setError(null);
     } catch (err) {
