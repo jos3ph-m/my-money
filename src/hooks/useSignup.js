@@ -28,7 +28,7 @@ export const useSignup = () => {
       await res.user.updateProfile({ displayName });
 
       // dispatch login action
-      dispatch({ type: 'LOGIN' });
+      dispatch({ type: 'LOGIN', payload: res.user });
 
       setIsPending(false);
       setError(null);
