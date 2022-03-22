@@ -9,5 +9,6 @@ const useLogout = () => {
 
   const logout = async () => {
     setError(null);
+    setIsPending(true);
   };
 };
