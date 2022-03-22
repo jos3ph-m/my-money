@@ -14,6 +14,9 @@ const useLogout = () => {
     // sign the user out
     try {
       await projectAuth.signOut();
+      //dispatch logout action
+      dispatch({ type: 'LOGOUT' });
+      setIsPending(false);
     } catch (err) {
       console.log(err);
       setError(err.message);
