@@ -13,6 +13,9 @@ const useLogout = () => {
 
     // sign the user out
     try {
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+      setError(err.message);
+    }
   };
 };
