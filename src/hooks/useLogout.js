@@ -16,6 +16,7 @@ const useLogout = () => {
     } catch (err) {
       console.log(err);
       setError(err.message);
+      setIsPending(false);
     }
   };
 };
