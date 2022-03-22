@@ -13,6 +13,7 @@ const useLogout = () => {
 
     // sign the user out
     try {
+      await projectAuth.signOut();
     } catch (err) {
       console.log(err);
       setError(err.message);
