@@ -14,7 +14,9 @@ export default function Navbar() {
           <Link to="/login">Login</Link>
           <Link to="/signup">Sign up</Link>
         </li>
-        <li></li>
+        <li>
+          <button className="btn"></button>
+        </li>
       </ul>
     </nav>
   );
