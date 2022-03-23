@@ -24,4 +24,6 @@ const useLogout = () => {
       setIsPending(false);
     }
   };
+
+  return { logout, error, isPending };
 };
