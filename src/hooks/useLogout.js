@@ -20,6 +20,8 @@ export const useLogout = () => {
       dispatch({ type: 'LOGOUT' });
 
       // update state
+      if (!isCancelled) {
+      }
       setIsPending(false);
       setError(null);
     } catch (err) {
