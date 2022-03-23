@@ -18,6 +18,8 @@ export const useLogout = () => {
       await projectAuth.signOut();
       //dispatch logout action
       dispatch({ type: 'LOGOUT' });
+
+      // update state
       setIsPending(false);
       setError(null);
     } catch (err) {
