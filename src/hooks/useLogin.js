@@ -12,4 +12,6 @@ export const useLogin = () => {
     setError(null);
     setIsPending(true);
   };
+
+  return { login, error, isPending };
 };
