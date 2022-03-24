@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useEffect } from 'react/cjs/react.production.min';
+import { useState, useEffect } from 'react';
+
 import { projectAuth } from '../firebase/config';
 import { useAuthContext } from './useAuthContext';
 
