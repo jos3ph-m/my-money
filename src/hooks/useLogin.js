@@ -11,6 +11,11 @@ export const useLogin = () => {
   const login = async () => {
     setError(null);
     setIsPending(true);
+
+    // sign the user in
+    try {
+      await projectAuth.signInWithEmailAndPassword();
+    } catch (error) {}
   };
 
   return { login, error, isPending };
