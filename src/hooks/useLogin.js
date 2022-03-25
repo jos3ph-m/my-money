@@ -18,7 +18,10 @@ export const useLogin = () => {
 
       //dispatch login action
       dispatch({ type: 'LOGIN', payload: res.user });
-    } catch (err) {}
+    } catch (err) {
+      if (!isCancelled) {
+      }
+    }
   };
 
   return { login, error, isPending };
