@@ -33,7 +33,7 @@ export default function Login() {
         />
       </label>
       <button className="btn">Login</button>
-      {isPending && <button></button>}
+      {isPending && <button className="btn"></button>}
       {error && <p>{error}</p>}
     </form>
   );
