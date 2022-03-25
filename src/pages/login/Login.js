@@ -33,6 +33,7 @@ export default function Login() {
         />
       </label>
       <button className="btn">Login</button>
+      {error && <p>{error}</p>}
     </form>
   );
 }
