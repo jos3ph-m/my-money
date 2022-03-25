@@ -20,6 +20,7 @@ export const useLogin = () => {
       dispatch({ type: 'LOGIN', payload: res.user });
     } catch (err) {
       if (!isCancelled) {
+        console.log(err.message);
       }
     }
   };
