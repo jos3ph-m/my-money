@@ -18,7 +18,7 @@ export const useLogin = () => {
 
       //dispatch login action
       dispatch({ type: 'LOGIN', payload: res.user });
-    } catch (error) {}
+    } catch (err) {}
   };
 
   return { login, error, isPending };
