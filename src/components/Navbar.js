@@ -12,12 +12,14 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <ul>
         <li className={styles.title}>myMoney</li>
-        <>
-          <li>
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign up</Link>
-          </li>
-        </>
+        {!user && (
+          <>
+            <li>
+              <Link to="/login">Login</Link>
+              <Link to="/signup">Sign up</Link>
+            </li>
+          </>
+        )}
         <li>
           <button className="btn" onClick={logout}>
             Logout
