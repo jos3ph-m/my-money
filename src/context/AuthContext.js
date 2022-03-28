@@ -20,7 +20,7 @@ export const AuthContextProvider = ({ children }) => {
     authIsReady: false,
   });
 
-  useEffect(() => {});
+  useEffect(() => {}, []);
 
   console.log('AuthContext state: ', state);
 
