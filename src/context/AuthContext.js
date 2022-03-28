@@ -22,7 +22,7 @@ export const AuthContextProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    projectAuth.onAuthStateChanged(() => {});
+    projectAuth.onAuthStateChanged((user) => {});
   }, []);
 
   console.log('AuthContext state: ', state);
