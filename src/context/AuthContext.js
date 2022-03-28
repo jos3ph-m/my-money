@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react';
+import { useEffect } from 'react/cjs/react.production.min';
 
 export const AuthContext = createContext();
 
@@ -18,6 +19,8 @@ export const AuthContextProvider = ({ children }) => {
     user: null,
     authIsReady: false,
   });
+
+  useEffect(() => {});
 
   console.log('AuthContext state: ', state);
 
