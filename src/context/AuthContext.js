@@ -23,7 +23,7 @@ export const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
     projectAuth.onAuthStateChanged((user) => {
-      dispatch({ type: 'AUTH_IS_READY' });
+      dispatch({ type: 'AUTH_IS_READY', payload: user });
     });
   }, []);
 
