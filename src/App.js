@@ -8,6 +8,7 @@ import Signup from './pages/signup/Signup';
 import Navbar from './components/Navbar';
 
 function App() {
+  const { authIsReady } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
