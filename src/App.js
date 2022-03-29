@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { useAuthContext } from './hooks/useAuthContext';
 
 // Pages & Components
 import Home from './pages/home/Home';
