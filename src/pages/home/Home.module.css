@@ -4,3 +4,9 @@
   max-width: 960px;
   margin: 60px auto;
 }
+.content {
+  padding-right: 30px;
+}
+.sidebar {
+  padding-left: 30px;
+}
