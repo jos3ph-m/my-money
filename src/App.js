@@ -23,7 +23,10 @@ function App() {
               {user && <Redirect to="/" />}
               {!user && <Login />}
             </Route>
-            <Route path="/signup">{!user && <Signup />}</Route>
+            <Route path="/signup">
+              {user && <Redirect to="/" />}
+              {!user && <Signup />}
+            </Route>
           </Switch>
         </BrowserRouter>
       )}
