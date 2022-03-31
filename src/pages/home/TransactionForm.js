@@ -7,7 +7,10 @@ export default function TransactionForm() {
     <>
       <h3>Add a Transaction</h3>
       <form>
-        <label></label>
+        <label>
+          <span>Transaction name:</span>
+          <input type="text" required />
+        </label>
       </form>
     </>
   );
