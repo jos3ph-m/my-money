@@ -9,7 +9,11 @@ export default function TransactionForm() {
       <form>
         <label>
           <span>Transaction name:</span>
-          <input type="text" required />
+          <input
+            type="text"
+            required
+            onChange={(e) => setName(e.target.value)}
+          />
         </label>
       </form>
     </>
