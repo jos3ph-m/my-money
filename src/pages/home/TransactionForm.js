@@ -6,6 +6,7 @@ export default function TransactionForm() {
   return (
     <>
       <h3>Add a Transaction</h3>
+      <form></form>
     </>
   );
 }
