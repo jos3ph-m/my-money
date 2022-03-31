@@ -13,6 +13,7 @@ export default function TransactionForm() {
             type="text"
             required
             onChange={(e) => setName(e.target.value)}
+            value={name}
           />
         </label>
       </form>
