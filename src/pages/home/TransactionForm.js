@@ -25,7 +25,7 @@ export default function TransactionForm() {
             value={amount}
           />
         </label>
-        <button></button>
+        <button>Add Transaction</button>
       </form>
     </>
   );
