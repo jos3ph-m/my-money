@@ -4,7 +4,9 @@ export default function TransactionForm() {
   const [name, setName] = useState('');
   const [amount, setAmount] = useState('');
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <h3>Add a Transaction</h3>
