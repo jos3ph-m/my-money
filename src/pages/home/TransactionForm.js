@@ -16,6 +16,15 @@ export default function TransactionForm() {
             value={name}
           />
         </label>
+        <label>
+          <span>Amount ($):</span>
+          <input
+            type="number"
+            required
+            onChange={(e) => setAmount(e.target.value)}
+            value={amount}
+          />
+        </label>
       </form>
     </>
   );
