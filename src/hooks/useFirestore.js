@@ -3,6 +3,7 @@ import { projectFirestore } from '../firebase/config';
 
 let initialState = {
   document: null,
+  isPending: false,
 };
 
 export const useFirestore = (collection) => {
