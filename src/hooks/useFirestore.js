@@ -8,6 +8,8 @@ let initialState = {
   success: null,
 };
 
+const firestoreReducer = () => {};
+
 export const useFirestore = (collection) => {
   const [response, dispatch] = useReducer(firestoreReducer, initialState);
 };
