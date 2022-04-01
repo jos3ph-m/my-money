@@ -5,6 +5,7 @@ let initialState = {
   document: null,
   isPending: false,
   error: null,
+  success: null,
 };
 
 export const useFirestore = (collection) => {
