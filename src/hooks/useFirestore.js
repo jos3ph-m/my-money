@@ -4,6 +4,7 @@ import { projectFirestore } from '../firebase/config';
 let initialState = {
   document: null,
   isPending: false,
+  error: null,
 };
 
 export const useFirestore = (collection) => {
