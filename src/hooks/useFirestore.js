@@ -29,7 +29,7 @@ export const useFirestore = (collection) => {
     dispatch({ type: 'IS_PENDING' });
 
     try {
-      await ref.add(doc);
+      const addedDocument = await ref.add(doc);
     } catch (err) {
       console.log(err);
     }
