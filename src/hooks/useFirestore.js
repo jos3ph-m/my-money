@@ -18,4 +18,7 @@ const firestoreReducer = (state, action) => {
 export const useFirestore = (collection) => {
   const [response, dispatch] = useReducer(firestoreReducer, initialState);
   const [isCancelled, setIsCancelled] = useState(false);
+
+  // collection reference
+  const ref = projectFirestore.collection(collection);
 };
