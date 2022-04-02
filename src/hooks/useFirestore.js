@@ -22,5 +22,6 @@ export const useFirestore = (collection) => {
   // collection reference
   const ref = projectFirestore.collection(collection);
 
-  ref.add();
+  // add a document
+  const addDocument = (doc) => {};
 };
