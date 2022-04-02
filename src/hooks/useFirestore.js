@@ -24,4 +24,7 @@ export const useFirestore = (collection) => {
 
   // add a document
   const addDocument = (doc) => {};
+
+  // delete a document
+  const deleteDocument = (id) => {};
 };
