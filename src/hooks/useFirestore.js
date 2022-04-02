@@ -25,12 +25,18 @@ export const useFirestore = (collection) => {
   const ref = projectFirestore.collection(collection);
 
   // add a document
-  const addDocument = (doc) => {
+  const addDocument = async (doc) => {
     dispatch({ type: 'IS_PENDING' });
+
+    try {
+      await ref.add(doc);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   // delete a document
-  const deleteDocument = (id) => {};
+  const deleteDocument = async (id) => {};
 
   useEffect(() => {
     return () => setIsCancelled(true);
