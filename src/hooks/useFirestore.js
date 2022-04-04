@@ -30,7 +30,9 @@ export const useFirestore = (collection) => {
 
     try {
       const addedDocument = await ref.add(doc);
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   // delete a document
