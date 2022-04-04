@@ -13,7 +13,7 @@ const firestoreReducer = (state, action) => {
     case 'IS_PENDING':
       return { ...state, isPending: true };
     case 'ADDED_DOCUMENT':
-      return { ...state, isPending: false, document };
+      return { ...state, isPending: false, document: action.payload };
     default:
       return state;
   }
