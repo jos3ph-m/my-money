@@ -30,6 +30,8 @@ export const useFirestore = (collection) => {
 
     try {
       const addedDocument = await ref.add(doc);
+      if (!isCancelled) {
+      }
     } catch (err) {
       console.log(err);
     }
