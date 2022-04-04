@@ -27,6 +27,7 @@ export const useFirestore = (collection) => {
   // only dispatch if not cancelled
   const dispatchIfNotCancelled = (action) => {
     if (!isCancelled) {
+      dispatch(action);
     }
   };
 
