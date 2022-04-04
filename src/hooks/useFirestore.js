@@ -49,9 +49,7 @@ export const useFirestore = (collection) => {
         type: 'ADDED_DOCUMENT',
         payload: addedDocument,
       });
-    } catch (err) {
-      console.log(err);
-    }
+    } catch (err) {}
   };
 
   // delete a document
