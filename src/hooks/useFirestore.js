@@ -49,7 +49,9 @@ export const useFirestore = (collection) => {
         type: 'ADDED_DOCUMENT',
         payload: addedDocument,
       });
-    } catch (err) {}
+    } catch (err) {
+      dispatchIfNotCancelled({ type: 'ERROR', payload: err.message });
+    }
   };
 
   // delete a document
