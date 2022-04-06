@@ -1,6 +1,5 @@
-import styles from './Home.module.css';
-
 // styles
+import styles from './Home.module.css';
 
 // components
 import TransactionForm from './TransactionForm';
