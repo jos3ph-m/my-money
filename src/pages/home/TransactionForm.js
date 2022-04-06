@@ -9,8 +9,7 @@ export default function TransactionForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     addDocument({
-      uid,
-      name,
+      uid: name,
       amount,
     });
   };
