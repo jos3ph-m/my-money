@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useEffect } from 'react/cjs/react.production.min';
+import { useState, useEffect } from 'react';
 import { useFirestore } from '../../hooks/useFirestore';
 
 export default function TransactionForm({ uid }) {
