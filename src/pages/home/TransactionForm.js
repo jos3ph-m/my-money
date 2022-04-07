@@ -16,7 +16,11 @@ export default function TransactionForm({ uid }) {
     });
   };
 
-  useEffect(() => {}, [response.success]);
+  useEffect(() => {
+    if (response.success) {
+      setName('');
+    }
+  }, [response.success]);
 
   return (
     <>
