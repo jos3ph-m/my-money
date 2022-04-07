@@ -5,5 +5,7 @@ export const useCollection = (collection) => {
   const [documents, setDocuments] = useState(null);
   const [error, setError] = useState(null);
 
-  useEffect(() => {}, [collection]);
+  useEffect(() => {
+    let ref = projectFirestore.collection(collection);
+  }, [collection]);
 };
