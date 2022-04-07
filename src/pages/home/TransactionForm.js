@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react/cjs/react.production.min';
 import { useFirestore } from '../../hooks/useFirestore';
 
 export default function TransactionForm({ uid }) {
@@ -14,6 +15,9 @@ export default function TransactionForm({ uid }) {
       amount,
     });
   };
+
+  useEffect();
+
   return (
     <>
       <h3>Add a Transaction</h3>
