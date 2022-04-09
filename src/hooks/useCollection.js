@@ -10,6 +10,9 @@ export const useCollection = (collection) => {
 
     const unsubscribe = ref.onSnapshot((snapshot) => {
       let results = [];
+      snapshot.docs.forEach((doc) => {
+        results.push({ ...doc.data() });
+      });
     });
   }, [collection]);
 };
