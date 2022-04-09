@@ -21,6 +21,7 @@ export const useCollection = (collection) => {
       },
       (error) => {
         console.log(error);
+        setError('could not fetch the data');
       }
     );
   }, [collection]);
