@@ -16,7 +16,7 @@ export const useCollection = (collection) => {
 
       // update state
       setDocuments(results);
-      setError();
+      setError(null);
     });
   }, [collection]);
 };
