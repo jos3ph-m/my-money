@@ -13,6 +13,9 @@ export const useCollection = (collection) => {
       snapshot.docs.forEach((doc) => {
         results.push({ ...doc.data(), id: doc.id });
       });
+
+      // update state
+      setDocuments(results);
     });
   }, [collection]);
 };
