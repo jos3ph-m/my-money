@@ -9,6 +9,7 @@ import TransactionForm from './TransactionForm';
 
 export default function Home() {
   const { user } = useAuthContext();
+  const { documents, error } = useCollection();
   return (
     <div className={styles.container}>
       <div className={styles.content}>transaction list</div>
