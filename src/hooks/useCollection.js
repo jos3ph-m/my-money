@@ -8,6 +8,8 @@ export const useCollection = (collection) => {
   useEffect(() => {
     let ref = projectFirestore.collection(collection);
 
-    const unsubscribe = ref.onSnapshot((snapshot) => {});
+    const unsubscribe = ref.onSnapshot((snapshot) => {
+      let results = [];
+    });
   }, [collection]);
 };
