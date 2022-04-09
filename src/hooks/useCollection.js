@@ -24,8 +24,5 @@ export const useCollection = (collection) => {
         setError('could not fetch the data');
       }
     );
-
-    // unsubscribe on unmount
-    return () => unsubscribe();
   }, [collection]);
 };
