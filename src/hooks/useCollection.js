@@ -26,5 +26,6 @@ export const useCollection = (collection) => {
     );
 
     // unsubscribe on unmount
+    return () => unsubscribe();
   }, [collection]);
 };
