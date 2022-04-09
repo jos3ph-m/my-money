@@ -1,5 +1,4 @@
 import { useAuthContext } from '../../hooks/useAuthContext';
-import { useCollection } from '../../hooks/useCollection';
 
 // styles
 import styles from './Home.module.css';
