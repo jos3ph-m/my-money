@@ -16,7 +16,9 @@ export default function Home() {
         {error && <p>{error}</p>}
         {documents && <TransactionList />}
       </div>
-      <div className={styles.sidebar}></div>
+      <div className={styles.sidebar}>
+        <TransactionForm uid={user.uid} />
+      </div>
     </div>
   );
 }
