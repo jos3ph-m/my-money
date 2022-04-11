@@ -4,5 +4,5 @@ import React from 'react';
 import styles from './Home.modlues.css';
 
 export default function TransactionList() {
-  return <ul></ul>;
+  return <ul className={styles.transactions}></ul>;
 }
