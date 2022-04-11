@@ -6,6 +6,7 @@ import styles from './Home.module.css';
 
 // components
 import TransactionForm from './TransactionForm';
+import TransactionList from './TransactionList';
 
 export default function Home() {
   const { user } = useAuthContext();
