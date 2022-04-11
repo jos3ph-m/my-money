@@ -8,7 +8,7 @@ export default function TransactionList({ transactions }) {
     <ul className={styles.transactions}>
       {transactions.map((transaction) => (
         <li key={transaction.id}>
-          <p className={styles.name}></p>
+          <p className={styles.name}>{transaction.name}</p>
         </li>
       ))}
     </ul>
