@@ -1,7 +1,7 @@
 import React from 'react';
 
 // styles
-import styles from './Home.modlues.css';
+import styles from './Home.module.css';
 
 export default function TransactionList({ transactions }) {
   return (
