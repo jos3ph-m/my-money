@@ -6,7 +6,7 @@ export const useCollection = (collection) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    let ref = projectFirestore.collection(collection).where();
+    let ref = projectFirestore.collection(collection);
 
     const unsubscribe = ref.onSnapshot(
       (snapshot) => {
