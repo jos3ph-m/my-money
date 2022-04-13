@@ -19,7 +19,7 @@ export const useCollection = (collection, _query, _orderBy) => {
     }
 
     if (orderBy) {
-      ref = ref.orderBy();
+      ref = ref.orderBy(...orderBy);
     }
 
     const unsubscribe = ref.onSnapshot(
