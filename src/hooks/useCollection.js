@@ -9,6 +9,7 @@ export const useCollection = (collection, _query, _orderBy) => {
   // _query is an array and is 'different' on every function call
 
   const query = useRef(_query).current;
+  const orderBy = useRef(_orderBy);
 
   useEffect(() => {
     let ref = projectFirestore.collection(collection);
