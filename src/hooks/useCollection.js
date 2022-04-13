@@ -18,6 +18,9 @@ export const useCollection = (collection, _query, _orderBy) => {
       ref = ref.where(...query);
     }
 
+    if (orderBy) {
+    }
+
     const unsubscribe = ref.onSnapshot(
       (snapshot) => {
         let results = [];
