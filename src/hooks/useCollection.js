@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { projectFirestore } from '../firebase/config';
 
-export const useCollection = (collection, _query) => {
+export const useCollection = (collection, _query, _orderBy) => {
   const [documents, setDocuments] = useState(null);
   const [error, setError] = useState(null);
 
