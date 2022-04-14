@@ -62,9 +62,7 @@ export const useFirestore = (collection) => {
   };
 
   // delete a document
-  const deleteDocument = async (id) => {
-    dispatch();
-  };
+  const deleteDocument = async (id) => {};
 
   useEffect(() => {
     return () => setIsCancelled(true);
