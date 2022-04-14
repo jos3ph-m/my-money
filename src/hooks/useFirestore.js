@@ -63,7 +63,7 @@ export const useFirestore = (collection) => {
 
   // delete a document
   const deleteDocument = async (id) => {
-    dispatch();
+    dispatch({});
   };
 
   useEffect(() => {
