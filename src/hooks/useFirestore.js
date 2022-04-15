@@ -77,7 +77,9 @@ export const useFirestore = (collection) => {
         type: 'DELETED_DOCUMENT',
         payload: deletedDocument,
       });
-    } catch (err) {}
+    } catch (err) {
+      dispatchIfNotCancelled({});
+    }
   };
 
   useEffect(() => {
