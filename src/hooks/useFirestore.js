@@ -78,7 +78,9 @@ export const useFirestore = (collection) => {
         payload: deletedDocument,
       });
     } catch (err) {
-      dispatchIfNotCancelled({});
+      dispatchIfNotCancelled({
+        type: 'ERROR',
+      });
     }
   };
 
