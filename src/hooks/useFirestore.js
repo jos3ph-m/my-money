@@ -80,6 +80,7 @@ export const useFirestore = (collection) => {
     } catch (err) {
       dispatchIfNotCancelled({
         type: 'ERROR',
+        payload: 'Could not delete',
       });
     }
   };
