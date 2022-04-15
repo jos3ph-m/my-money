@@ -23,6 +23,7 @@ const firestoreReducer = (state, action) => {
       return {
         isPending: false,
         document: action.payload,
+        success: true,
       };
     case 'ERROR':
       return {
