@@ -1,5 +1,3 @@
-import React from 'react';
-
 // styles
 import styles from './Home.module.css';
 
