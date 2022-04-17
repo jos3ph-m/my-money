@@ -1,5 +1,3 @@
-import { useFirestore } from '../../hooks/useFirestore';
-
 // styles
 import styles from './Home.module.css';
 
