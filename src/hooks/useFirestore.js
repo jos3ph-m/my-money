@@ -22,7 +22,7 @@ const firestoreReducer = (state, action) => {
     case 'DELETED_DOCUMENT':
       return {
         isPending: false,
-        document: null,
+        document: action.payload,
         success: true,
         error: null,
       };
