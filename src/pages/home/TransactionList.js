@@ -11,7 +11,7 @@ export default function TransactionList({ transactions }) {
         <li key={transaction.id}>
           <p className={styles.name}>{transaction.name}</p>
           <p className={styles.amount}>${transaction.amount}</p>
-          <button>x</button>
+          <button onClick={}>x</button>
         </li>
       ))}
     </ul>
